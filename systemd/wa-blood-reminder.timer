@@ -1,0 +1,12 @@
+[Unit]
+Description=Run Daily WhatsApp Reminder at 07:00 WIB
+RefuseManualStart=no
+RefuseManualStop=no
+
+[Timer]
+OnCalendar=*-*-* 07:00:00
+Persistent=true
+Unit=wa-blood-reminder.service
+
+[Install]
+WantedBy=timers.target

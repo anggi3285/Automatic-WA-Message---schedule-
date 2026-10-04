@@ -1,0 +1,7 @@
+[Unit]
+Description=Daily Scheduled WhatsApp Reminder Trigger
+Wants=wa-gateway.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/send_reminder.sh
